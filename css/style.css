@@ -1,0 +1,175 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html {
+    scroll-behavior: initial;
+  }
+}
+.wrapper {
+  padding-block: 24px;
+  margin-inline: 32px;
+}
+
+.top-bar {
+  background-color: #1f2937;
+  display: flex;
+  color: #f9faf8;
+}
+.top-bar .wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.layer1 {
+  background-color: #1f2937;
+}
+.layer1 .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.layer1 .Hero-text {
+  color: #f9faf8;
+}
+.layer1 .image-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+  height: 150px;
+}
+.layer1 button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: 0;
+  outline: 0;
+  padding: 0.2rem 1.5rem;
+  border-radius: 10px;
+}
+
+.layer2 header {
+  margin-block: 2rem;
+  text-align: center;
+}
+.layer2 .wrapper ul {
+  list-style: none;
+}
+.layer2 .wrapper ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.layer2 .wrapper ul li .box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #3882f6;
+  border-radius: 10px;
+}
+
+.layer3 {
+  background-color: #e5e7eb;
+}
+.layer3 h3 {
+  font-weight: 200;
+  font-style: italic;
+}
+.layer3 p {
+  font-weight: 700;
+  text-align: right;
+}
+
+.layer4 .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 24px 32px;
+}
+.layer4 .main-container .text-container {
+  text-align: center;
+}
+.layer4 button {
+  background-color: transparent;
+  border: 2px solid white;
+  outline: 0;
+  color: white;
+  padding: 0.2rem 1.5rem;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #1f2937;
+  margin: 0;
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
